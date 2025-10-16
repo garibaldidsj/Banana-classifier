@@ -4,11 +4,14 @@ Este projeto integra visão computacional (usando TensorFlow Lite e OpenCV) com 
 O sistema detecta a presença de uma banana em uma esteira, analisa sua qualidade (boa ou ruim) e acende LEDs correspondentes no Arduino.
 
 Instalação (usando Anaconda)
+
 1️⃣ Criar e ativar o ambiente
+
 conda create -n banana-detector python=3.12.7
 conda activate banana-detector
 
 2️⃣ Instalar as dependências
+
 pip install opencv-python numpy tensorflow pyserial
 
 
@@ -16,11 +19,15 @@ pip install opencv-python numpy tensorflow pyserial
 
 pip install tflite-runtime
 
+
 3️⃣ Clonar o repositório
+
 git clone https://github.com/<seu-usuario>/banana-detector.git
 cd banana-detector
 
+
 4️⃣ Conectar o Arduino
+
 
 Faça upload do código arduino_banana.ino pelo Arduino IDE.
 
@@ -30,7 +37,9 @@ Atualize a linha no Python:
 
 arduino = serial.Serial('COM6', 9600)
 
+
 ▶️ Execução
+
 Passos:
 
 Certifique-se de que o Arduino está conectado e o sensor IR funciona.
