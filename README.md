@@ -7,8 +7,8 @@ O sistema detecta a presença de uma banana em uma esteira, analisa sua qualidad
 
 ## 1️⃣ Criar e ativar o ambiente
 ```bash
-conda create -n banana-detector python=3.12.7
-conda activate banana-detector
+conda create -n Banana-classifier python=3.12.7
+conda activate Banana-classifier
 ```
 ## 2️⃣ Instalar as dependências
 ```bash
@@ -23,13 +23,13 @@ pip install tflite-runtime
 ## 3️⃣ Clonar o repositório
 ```bash
 
-git clone https://github.com/<seu-usuario>/banana-detector.git
-cd banana-detector
+git clone https://github.com/garibaldidsj/Banana-classifier.git
+cd Banana-classifier
 ```
 
 ## 4️⃣ Conectar o Arduino
 
-Faça upload do código arduino_banana.ino pelo Arduino IDE.
+Abra o código arduino_esteira.ino pelo Arduino IDE.
 
 Verifique a porta serial (ex: COM6 no Windows ou /dev/ttyUSB0 no Linux).
 
@@ -49,7 +49,7 @@ Execute o script principal:
 ```bash
 
 
-python main.py
+python camera_detecta_tflite.py
 ```
 
 Quando o Arduino detectar uma banana, o script abrirá uma janela de vídeo.
