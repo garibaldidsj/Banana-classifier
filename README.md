@@ -61,3 +61,11 @@ O LED correspondente acenderá brevemente.
 Encerrar manualmente
 
 Pressione q para fechar a janela de vídeo e encerrar o processo.
+
+# Treinando modelos
+
+Os modelos pré-treinados já estão disponíveis, tanto na versão .h5 como .tflite.
+
+Caso haja necessidade de um novo treinamento, os scripts utilizados estão nos arquivos .ipynb, tanto para o detector de banana quando para o classificador de qualidade.
+
+Para executar esses arquivos será necessário a utilização de um ambiente baseado em Jupiter.
