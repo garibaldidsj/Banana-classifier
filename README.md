@@ -153,6 +153,44 @@ Recorte da banana
 Verde  Comestível  Podre
 ```
 
+
+## 📊 Resultados
+
+Após o treinamento, o modelo MobileNetV2 foi avaliado utilizando o conjunto de teste, composto por **562 imagens**.
+
+O modelo apresentou **95,55% de acurácia** no conjunto de teste.
+
+| Classe | Precision | Recall | F1-score | Imagens |
+|---|---:|---:|---:|---:|
+| Comestível | 94,93% | 98,13% | 96,50% | 267 |
+| Verde | 98,11% | 94,55% | 96,30% | 110 |
+| Podre | 95,00% | 92,43% | 93,70% | 185 |
+| **Média** | **96,01%** | **95,04%** | **95,50%** | **562** |
+
+A acurácia geral obtida foi:
+
+```text
+Accuracy: 95,55%
+```
+
+### Matriz de confusão
+
+```text
+                  Predito
+              Comestível Verde Podre
+Real
+Comestível        262      0      5
+Verde               2    104      4
+Podre              12      2    171
+```
+
+O modelo apresentou desempenho equilibrado entre as três classes. A classe `comestivel` apresentou o maior recall, com **98,13%**, enquanto a classe `verde` apresentou a maior precisão, com **98,11%**.
+
+A classe `podre` apresentou recall de **92,43%**, sendo responsável pela maior quantidade de erros de classificação. Entre os 185 exemplos de bananas podres presentes no conjunto de teste, 171 foram corretamente classificados, enquanto 12 foram classificados como `comestivel` e 2 como `verde`.
+
+De forma geral, os resultados indicam que a MobileNetV2 apresenta desempenho adequado para a etapa de classificação de qualidade proposta no sistema.
+
+
 ## 📦 Dataset
 
 O modelo de classificação utiliza o **Banana Ripeness Classification Dataset**, disponibilizado por S. M. Shahriar no Kaggle.
