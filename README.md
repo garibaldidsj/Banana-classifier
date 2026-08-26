@@ -155,9 +155,24 @@ Verde  Comestível  Podre
 
 ## 📦 Dataset
 
-O modelo de classificação utiliza o **Banana Ripeness Classification Dataset**.
+O modelo de classificação utiliza o **Banana Ripeness Classification Dataset**, disponibilizado por S. M. Shahriar no Kaggle.
 
-O dataset original possui quatro classes:
+O dataset contém 13.478 imagens de bananas em diferentes estágios de maturação, divididas em conjuntos de treinamento, validação e teste.
+
+O dataset está disponível em:
+
+https://www.kaggle.com/datasets/shahriar26s/banana-ripeness-classification-dataset
+
+### Organização do dataset
+
+| Conjunto | Imagens |
+|---|---:|
+| Treinamento | 11.793 |
+| Validação | 1.123 |
+| Teste | 562 |
+| **Total** | **13.478** |
+
+O conjunto original possui quatro classes:
 
 ```text
 ripe
@@ -166,7 +181,7 @@ unripe
 rotten
 ```
 
-No projeto, as classes são reorganizadas da seguinte forma:
+Para este projeto, as classes foram reorganizadas em três categorias:
 
 ```text
 ripe + overripe → comestivel
@@ -174,21 +189,7 @@ unripe          → verde
 rotten          → podre
 ```
 
-O conjunto utilizado possui:
-
-```text
-Treinamento: 11.793 imagens
-Validação:    1.123 imagens
-Teste:          562 imagens
-```
-
-Total:
-
-```text
-13.478 imagens
-```
-
-A estrutura utilizada para o treinamento é:
+A estrutura utilizada pelo projeto é:
 
 ```text
 dataset/
@@ -208,6 +209,12 @@ dataset/
         ├── verde/
         └── podre/
 ```
+
+### Fonte
+
+**Shahriar, S. M.** *Banana Ripeness Classification Dataset*. Kaggle.
+
+O dataset está disponível sob a licença **Apache 2.0**.
 
 ## 🏋️ Treinamento do classificador
 
