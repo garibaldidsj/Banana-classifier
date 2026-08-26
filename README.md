@@ -13,7 +13,7 @@ Sistema de visão computacional para detecção, classificação e separação a
 ### Hardware
 
 * Arduino Uno;
-* Sensor ultrassônico;
+* Sensor ultrassônico HC-SR04;
 * Webcam;
 * Motor para esteira;
 * Servo motor;
