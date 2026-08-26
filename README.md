@@ -2,18 +2,6 @@
 
 Sistema de visão computacional para detecção, classificação e separação automática de bananas. O projeto utiliza **YOLOv8n** para detecção da fruta e **MobileNetV2** para classificação da qualidade, integrado a um sistema físico controlado por **Arduino Uno**.
 
-## 🚀 Funcionalidades
-
-* Detecção de bananas utilizando YOLOv8n;
-* Localização da fruta na imagem;
-* Classificação da qualidade utilizando MobileNetV2;
-* Classificação em três categorias: comestível, verde e podre;
-* Detecção da entrada da fruta utilizando sensor ultrassônico;
-* Controle da esteira transportadora através do Arduino;
-* Separação física das bananas utilizando servo motor;
-* Aquisição de imagens através de webcam;
-* Comunicação entre o sistema de visão computacional e o Arduino.
-
 ## 📋 Requisitos
 
 ### Software
